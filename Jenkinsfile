@@ -1,9 +1,6 @@
 pipeline {
-  agent { 
-    dockerfile true {
-      filename 'Dockerfile'
-      args "-u jenkins"
-      }
+  agent {dockerfile {
+  args "-u jenkins"}
   }
   stages {
     stage("prepare") {
