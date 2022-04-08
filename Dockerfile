@@ -7,7 +7,7 @@ ENV LANG C.UTF-8
 LABEL maintainer="soyel.alam@ucdconnect.ie"
 
 RUN apt-get update && \
-	apt-get -y install sudo zip awscli
+	apt-get install sudo zip awscli -y
 
 RUN apt-get install -q -y openjdk-8-jdk && \
     apt-get install -y python3-pip python3.6
