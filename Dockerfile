@@ -5,8 +5,8 @@ ENV LC_ALL C.UTF-8
 ENV LANG C.UTF-8
 
 
-RUN sudo apt update && \
-	sudo apt install zip awscli
+RUN apt update && \
+	apt install sudo zip awscli
 
 RUN apt-get install -q -y openjdk-8-jdk && \
     apt-get install -y python3-pip python3.6
