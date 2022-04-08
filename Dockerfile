@@ -4,10 +4,9 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV LC_ALL C.UTF-8
 ENV LANG C.UTF-8
 
-LABEL maintainer="soyel.alam@ucdconnect.ie"
 
-RUN apt-get update && \
-	apt-get install -y sudo zip awscli 
+RUN sudo apt-get install update && \
+	sudo apt-get install zip awscli 
 
 RUN apt-get install -q -y openjdk-8-jdk && \
     apt-get install -y python3-pip python3.6
